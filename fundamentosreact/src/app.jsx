@@ -16,6 +16,7 @@ import DiretaPai from "./components/comunication/DiretaPai";
 import IndiretaPai from "./components/comunication/IndiretaPai";
 import Input from "./components/formulario/forms";
 import Contador from "./components/contador/Contador";
+import Mega from "./components/mega/Mega";
 
 export default function app(){
     return(
@@ -74,6 +75,10 @@ export default function app(){
 
                 <Card titulo="Contador">
                     <Contador />
+                </Card>
+
+                <Card titulo="Mega">
+                    <Mega />
                 </Card>
             </div>
         </div>

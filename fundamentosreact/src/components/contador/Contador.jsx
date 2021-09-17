@@ -5,7 +5,7 @@ import Passo from "./Passo";
 import Button from "./Button";
 export default function IndiretaPai(props){
     const[numero,setNumero] = useState(0);
-    const[passo,setPasso] = useState(0);
+    const[passo,setPasso] = useState(1);
 
     function Change(e){
         var passof = parseInt(e.target.value)
@@ -26,9 +26,12 @@ export default function IndiretaPai(props){
     return(
         <div className="contador">
             <h2>Contador</h2>
-            <p><Display /></p>
-            <p><passo /></p><br />
-            <Button />
+            <p><Display numero={numero} /></p>
+            <p><Passo Change={Change} passo={passo}/></p>
+            <p><Button Somar={Somar} Subtrair={Subtrair}/></p>
+            {/* <p><Display numero={this.state.numero}/></p>
+            <p><Passo /></p><br />
+            <Button /> */}
         </div>        
     )
 }
