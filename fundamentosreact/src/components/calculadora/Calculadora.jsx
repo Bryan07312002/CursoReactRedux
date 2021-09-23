@@ -48,7 +48,7 @@ export default function Calculadora(){
         setResultado(resultado + "*")
     }
     function Igualdade(e){
-        setResultado(parseInt(resultado))
+        setResultado(Int(resultado))
     }
     return(
         <div id="Calculadora">
