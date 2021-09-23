@@ -14,7 +14,6 @@ export default function Mega(){
             setNumero(numero)
        }
     }
-
     
     function Gerador(){
         var max = 50
@@ -22,14 +21,7 @@ export default function Mega(){
         var randray = []
         for (let i = 0; i < numero; i++) {
             var rand = Math.floor(Math.random() * max) - min;
-            for (let index = 0; index < randray.length; index++) {
-                if(rand == randray[i]){
-                    index = 0  
-                    rand = Math.floor(Math.random() * max) - min;
-                    
-                }
-            }
-            randray[i] = rand + ", "
+            randray[i] = rand +" "
         }
         setMega(randray)
     }

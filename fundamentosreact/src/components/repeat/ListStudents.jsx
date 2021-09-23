@@ -4,7 +4,7 @@ import alunos from "../../data/alunos";
 export default function ListStudents(props){
     const list = alunos.map((aluno) =>{
         return(
-            <li key={alunos.id}>
+            <li key={aluno.id}>
                 {aluno.id}) {aluno.nome} - {aluno.nota}
             </li>
         )

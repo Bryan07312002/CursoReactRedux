@@ -4,8 +4,8 @@ import DiretaFilho from "./DiretaFilho";
 
 export default function DiretaPai(props){
     return(
-        <div>
+        <React.Fragment>
             <DiretaFilho nome="Bryan" idade={10} bool={true}/>
-        </div>
+        </React.Fragment>
     )
 }

@@ -17,6 +17,7 @@ import IndiretaPai from "./components/comunication/IndiretaPai";
 import Input from "./components/formulario/forms";
 import Contador from "./components/contador/Contador";
 import Mega from "./components/mega/Mega";
+import Calculadora from "./components/calculadora/Calculadora";
 
 export default function app(){
     return(
@@ -42,7 +43,7 @@ export default function app(){
                 <Card titulo="Family">
                     <Family sobrenome="Becker" >
                         <FamilyMembers nome="Bryan" />
-                        <FamilyMembers nome="Julia" />
+                        <FamilyMembers nome="Mariana" />
                         <FamilyMembers nome="Carlos" />
                     </Family>
                 </Card>
@@ -79,6 +80,10 @@ export default function app(){
 
                 <Card titulo="Mega">
                     <Mega />
+                </Card>
+
+                <Card titulo="Calculadora">
+                    <Calculadora />
                 </Card>
             </div>
         </div>

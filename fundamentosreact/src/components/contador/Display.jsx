@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Display(props){
     return(
-        <div>
+        <React.Fragment>
             {props.numero}
-        </div>
+        </React.Fragment>
     )
 }

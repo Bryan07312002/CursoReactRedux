@@ -2,10 +2,9 @@ import React from "react";
 
 export default function Button(props){
     return(
-
-        <div>
+        <React.Fragment>
             <button onClick={props.Somar}>+</button>
             <button onClick={props.Subtrair}>-</button>
-        </div>
+        </React.Fragment>
     )
 }
